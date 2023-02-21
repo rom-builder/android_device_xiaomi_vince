@@ -28,14 +28,11 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit extra stuff
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Banana stuff.
+$(call inherit-product, vendor/banana/config/common_full_phone.mk)
 
-# RiceDroid Flags
-RICE_DEVICE := vince
-RICE_MAINTAINER := Mohammed Rabil
-RICE_CHIPSET := Snapdragon®625
-SUSHI_BOOTANIMATION := 720
+# BananaDroid Flags
+BANANA_BUILD_TYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BUILD_APERTURE_CAMERA := true
 
