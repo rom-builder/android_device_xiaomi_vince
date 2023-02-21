@@ -29,7 +29,7 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/banana/config/common_full_phone.mk)
 
 # BananaDroid Flags
 BANANA_BUILD_TYPE := UNOFFICIAL
