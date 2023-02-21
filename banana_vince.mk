@@ -28,7 +28,7 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit extra stuff
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
-# Inherit some common stuff.
+# Inherit some common Banana stuff.
 $(call inherit-product, vendor/banana/config/common.mk)
 
 # BananaDroid Flags
