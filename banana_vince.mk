@@ -32,8 +32,17 @@ $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 $(call inherit-product, vendor/banana/config/common.mk)
 
 # BananaDroid Flags
-BANANA_BUILD_TYPE := UNOFFICIAL
+BANANA_MAINTAINER := Mohammed Rabil (rabilrbl)
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+BANANA_BUILD_TYPE := UNOFFICIAL
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 720
+
+# Charging Animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 TARGET_BUILD_APERTURE_CAMERA := true
 
 # Device identifier. This must come after all inclusions
