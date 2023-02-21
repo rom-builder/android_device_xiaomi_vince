@@ -33,7 +33,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # RiceDroid Flags
 RICE_DEVICE := vince
-RICE_MAINTAINER := Anandhan
+RICE_MAINTAINER := Mohammed Rabil
 RICE_CHIPSET := Snapdragon®625
 SUSHI_BOOTANIMATION := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -41,7 +41,7 @@ TARGET_BUILD_APERTURE_CAMERA := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := lineage_vince
+PRODUCT_NAME := banana_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
