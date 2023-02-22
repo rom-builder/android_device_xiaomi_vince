@@ -32,7 +32,7 @@ $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 $(call inherit-product, vendor/banana/config/common.mk)
 
 # BananaDroid Flags
-BANANA_MAINTAINER := Mohammed Rabil (rabilrbl)
+BANANA_MAINTAINER := "Mohammed Rabil (rabilrbl)"
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 BANANA_BUILD_TYPE := UNOFFICIAL
