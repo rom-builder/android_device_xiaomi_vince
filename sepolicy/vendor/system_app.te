@@ -7,10 +7,6 @@ get_prop(system_app, vendor_bluetooth_prop)
 # zram
 r_dir_file(system_app sysfs_zram)
 
-# Battery Health
-allow system_app sysfs_battery_supply:dir { search };
-allow system_app sysfs_battery_supply:file { read };
-allow system_app sysfs_battery_supply:file { open };
-allow system_app sysfs_battery_supply:file { getattr };
-
 binder_call(system_app, wificond)
+binder_call(system_app vold)
+binder_call(system_app, hal_power_default)

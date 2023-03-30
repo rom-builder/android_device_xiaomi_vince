@@ -2,13 +2,12 @@ allow system_server adb_data_file:dir { getattr open read };
 allow system_server adb_data_file:file { getattr open read };
 allow system_server device:chr_file { ioctl };
 allow system_server sysfs:file { getattr };
-allow system_server userspace_reboot_exported_prop:file { open read getattr };
-allow system_server userspace_reboot_config_prop:file { open read getattr };
-allow system_server exported_camera_prop:file { open read getattr };
+
+get_prop(system_server, userspace_reboot_config_prop)
+get_prop(system_server, userspace_reboot_exported_prop)
 
 # Camera
 allow system_server camera_prop:file { open read getattr };
-allow system_server exported_camera_prop:file { read };
 allow system_server mm-qcamerad:binder { call };
 get_prop(system_server, camera_prop)
 
